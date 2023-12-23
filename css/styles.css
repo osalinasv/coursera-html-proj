@@ -1,0 +1,266 @@
+html {
+  font-family: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+}
+
+body {
+  background-color: #f9fafb;
+  color: black;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.font-serif {
+  font-family: Superclarendon, 'Bookman Old Style', 'URW Bookman', 'URW Bookman L', 'Georgia Pro', Georgia, serif;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.color-muted {
+  color: #64748b;
+}
+
+.color-accent {
+  color: #fbbf24;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1280px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+  min-height: 100lvh;
+}
+
+.header {
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    margin-bottom: 2rem;
+  }
+}
+
+.header-content {
+  text-align: center;
+  padding-bottom: 4rem;
+  padding-top: 6rem;
+}
+
+@media (min-width: 1024px) {
+  .header-content {
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+  }
+}
+
+.header-logo {
+  aspect-ratio: 6 / 1;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: contain;
+  width: 380px;
+}
+
+@media (min-width: 1024px) {
+  .header-logo {
+    width: 520px;
+  }
+}
+
+.nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.nav-item {
+  display: inline-block;
+  outline-color: transparent;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 1px;
+  padding: 0.5rem 1rem;
+  transition-duration: 150ms;
+  transition-property: outline-color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-item:hover,
+.nav-item:focus-visible {
+  background-color: #f1f5f9;
+  outline-color: black;
+}
+
+.main {
+  display: grid;
+  flex-grow: 1;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .main {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.hero {
+  background-color: black;
+  border: 1px solid black;
+  color: #f9fafb;
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.hero-img {
+  aspect-ratio: 4 / 3;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .hero-content {
+    padding: 3rem;
+  }
+}
+
+.hero-heading {
+  display: block;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.hero-action {
+  background-color: #fbbf24;
+  color: black;
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  outline-color: transparent;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 1px;
+  padding: 0.5rem 1rem;
+  transition-duration: 150ms;
+  transition-property: outline-color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-action:hover,
+.hero-action:focus-visible {
+  background-color: #fbbf24;
+  outline-color: white;
+}
+
+.main-item {
+  border: 1px solid black;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.main-item-img {
+  aspect-ratio: 3 / 2;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .main-item-img {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+.main-item-content {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  padding: 1rem;
+}
+
+.main-item-heading {
+  font-weight: bold;
+}
+
+.main-item-action {
+  background-color: transparent;
+  color: black;
+  display: inline-block;
+  justify-self: end;
+  outline-color: transparent;
+  outline-offset: 2px;
+  outline-style: solid;
+  outline-width: 1px;
+  padding: 0.5rem 1rem;
+  transition-duration: 150ms;
+  transition-property: outline-color, background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-item-action:hover,
+.main-item-action:focus-visible {
+  background-color: #f1f5f9;
+  outline-color: black;
+}
+
+.footer {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+}
+
+.footer-logo {
+  aspect-ratio: 3 / 1;
+  object-fit: contain;
+  width: 100px;
+}
